@@ -127,24 +127,31 @@ overflow: hidden;
 
 .heart i{
     font-size: 30px;
-    /* color: white; */
-    /* text-shadow: black 0px 0px 1px; */
 }
 
 .hollowHeart{
     position: relative;
-
 }
 
 .fullHeart{
     position: absolute;
     top: 0;
     left: 0;
-    color: transparent
+    color: transparent;
+    
+   
+  
 }
 
 .fullHeart:hover{
-    color: var(--color2)
+    /* background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);  */
+    /* background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%);  */
+     background: linear-gradient(to left, var(--color1) 0%, var(--color2) 100%); 
+    /* -webkit-background-clip: text; */
+    /* -moz-background-clip: text; */
+      background-clip: text;
+   /* -webkit-text-fill-color:transparent; */
+
 }
 
 
