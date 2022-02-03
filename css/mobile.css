@@ -1,0 +1,29 @@
+
+.filterSection{
+    width: 100%;
+    padding: 30px
+}
+
+.filterList{
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.filterList li{
+    width: 100%;
+}
+
+
+
+.cardBlock{
+   width: 100%;
+}
+
+
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+
+}
