@@ -2,13 +2,10 @@ footer{
     color: var(--white);
     background-color: var(--darkGrey);
     min-height: 120px;
+    height: 100%;
     padding: 20px;
 }
 
-.blockPage{
-    max-width: 1200px;
-    margin: auto;
-}
 
 footer .siteName{
     font-size: 20px;

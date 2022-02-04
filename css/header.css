@@ -19,6 +19,26 @@ header .siteName{
     align-items: center;
 }
 
+label{
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    position: relative;
+    top: -40px;
+    right: 70px;
+    display: grid;
+    place-items: center;
+    color: var(--darkGrey);
+    opacity: 0.6;
+    transition-property: opacity;
+ 
+}
+
+.inputiD.form-control:focus+label i{
+    opacity: 0; 
+    transition-duration: 1s;
+
+}
 
 .inputiD {
     width: 100%;
@@ -41,12 +61,31 @@ header .title{
 
 
 .btnForm{
+    font-weight: bold;
     width: 217px;
     height: 50px;
-    margin: 30px 0;
+    margin: 15px 0 45px;
     border-radius: calc( 50px/ 2 );
     border:none;
+    background: none;
     background:  var(--gradientColor);
     color: var(--white);
     font-size: var(--textSize); 
+    transition-property: opacity;
+    transition-duration: 300ms;
+}
+
+.btnForm:hover{
+    opacity: 0.8;
+}
+
+
+/* PAGES MENU ------------------------------------ */
+
+.leftArrow{
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
 }

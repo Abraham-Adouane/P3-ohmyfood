@@ -1,16 +1,16 @@
 
-.filterSection{
+.fonctionnementSection{
     width: 100%;
     padding: 30px
 }
 
-.filterList{
+.fonctionnementList{
     width: 100%;
     flex-direction: column;
 
 }
 
-.filterList li{
+.fonctionnementList li{
     width: 100%;
 }
 
