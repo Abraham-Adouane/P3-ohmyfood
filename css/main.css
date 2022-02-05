@@ -153,6 +153,11 @@ transition: 500ms;
     opacity: 1;
 }
 
+
+.hollowHeart:focus > .fullHeart{
+opacity: 1;
+}
+
 .fullHeart{
     position: absolute;
     top: 0;
@@ -197,94 +202,81 @@ transition: 500ms;
 
 .blockCategory{
     display: flex;
-    justify-content: space-around;
-    border: rgb(89, 0, 255) 2px solid;
+    justify-content: space-between;
 } 
 
 .categoryMenu{
-    width: 33%;
-    margin: 20px;
-    border: 2px solid rgb(0, 255, 136)
+    width: calc(100% * 1/3);
 }
+
+.categoryName{
+    position: relative;
+    margin: 30px 15px;
+    font-weight: 400;
+}
+
+.categoryName::after{
+    z-index: 10;
+    width: 50px;
+    height: 4px;
+    content: "";
+    position: absolute;
+    bottom: -10px; left: 0px;
+    background-color: var(--checkboxcolor);
+}
+
 
 .mealCard{
     height: 70px;
-    margin: 15px 0;
+    margin: 15px;
+    padding: 0 0 0 15px;
     border-radius: 20px;
     background-color: var(--white);
     box-shadow: var(--shadow);
     display: flex;
-    justify-content: space-between;
     align-items: center;
     overflow: hidden;
 }
 
 
-.mealTextPrice{
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-    /* margin: 15px; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border:rgb(80, 55, 136) solid 2px
-}
-
 .mealText{
-    width: 50%;
+    width: 0%;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
-    border: red 2px solid;
-}
- /* .mealCard:hover > .mealTextPrice > .mealText, */
-.mealCard:hover > .mealTextPrice
-
- {
-    width: calc(100% - 80px);
-    transition: all .5s;
 }
 
 
 .mealText p{
+    width: 100%;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
 
-.mealCard:hover > .mealTextPrice > .mealText{
-    width: calc(100% - 50px);
+.mealCard:hover > .mealText{
     transition: all .5s;
 }
 
-.mealText + p{
-    padding: 10px;
-}
 .price{
-    width: 50px;
-    margin-right: px;
+    margin: 15px;
+    text-align: end;
+    text-justify: center;
 }
-
 
 .greenBox{
     width: 0px;
     height: 100%;
-    background-color: #99E2D0;
+    background-color: var(--checkboxcolor);
     transition-duration: 50ms;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-content: center;
 }
 
 .mealCard:hover > .greenBox {
-    flex-grow: 1;
-    /* width: 80px; */
+    flex-grow: 0.3;
     transition-duration: 500ms;
 }
-
-/* .mealCard:active > .greenBox{
-    width: 190px;
-} */
 
 .mealCard:hover > .greenBox > i{
     animation: checkspin 500ms linear ;
@@ -295,7 +287,6 @@ transition: 500ms;
     color: var(--white);
     
 }
-
 
 @keyframes checkspin{
     100% {

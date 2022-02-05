@@ -10,6 +10,7 @@
 --textColor: black;
 --color1: #F977DA;
 --color2: #9556dc;
+--checkboxcolor: #99E2D0;
 --color2End: rgba(149, 86, 220, 0);
 --gradientColor: linear-gradient(var(--color1), var(--color2));
 --white: #FFFFFF;
@@ -36,7 +37,7 @@ scroll-behavior: smooth;
 
 body{
     font-size: var(--textSize);
-    font-family: var(--classicFont)
+    font-family: var(--classicFont);
 }
 
 .blockPage{
@@ -70,7 +71,7 @@ li{
 }
 
 .uppercase{
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 /* Chargement        
