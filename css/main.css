@@ -82,7 +82,6 @@ section.restaurants{
 
 .card{
     position: relative;
-    /* min-width: 284px; */
     width: 284px;
     height: 284px;
     margin: 10px;
@@ -92,6 +91,10 @@ section.restaurants{
     transition-duration: 50ms;
     transition-property: transform box-shadow;
     transition-timing-function: ease-in;
+    display: grid;
+    grid-template-rows: max-content;
+
+
 }
 
 .card:hover{
@@ -127,7 +130,7 @@ section.restaurants{
 
 .heartTextZone{
 width: 100%;
-padding: 20px;
+padding: 15px;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -193,6 +196,8 @@ opacity: 1;
     border-radius: 25px 25px 0 0;
     box-shadow: var(--shadow);
     background-color: var(--bgColor);
+    display: flex;
+    flex-direction: column;
 }
 
 .menuTitle{
@@ -236,6 +241,7 @@ opacity: 1;
     display: flex;
     align-items: center;
     overflow: hidden;
+    opacity: 0;
 }
 
 
@@ -274,7 +280,7 @@ opacity: 1;
 }
 
 .mealCard:hover > .greenBox {
-    flex-grow: 0.3;
+    flex-grow: 0.2;
     transition-duration: 500ms;
 }
 
@@ -288,6 +294,8 @@ opacity: 1;
     
 }
 
+
+
 @keyframes checkspin{
     100% {
         transform :rotate(0deg)
@@ -296,3 +304,76 @@ opacity: 1;
         transform :rotate(-90deg)
     }
     }
+
+/* Animation  des items du menu  */
+
+    .mealCard.item1{
+        animation: appearance 1000ms;
+        animation-fill-mode: forwards;
+    }
+
+    .mealCard.item2{
+        animation:  appearance 1000ms;
+        animation-delay: 100ms;
+        animation-fill-mode: forwards;
+    }
+
+    .mealCard.item3{
+        animation:  appearance 1000ms;
+        animation-delay: 200ms;
+        animation-fill-mode: forwards;
+    }
+
+    .mealCard.item4{
+        animation:  appearance 1000ms;
+        animation-delay: 300ms;
+        animation-fill-mode: forwards;
+    }
+
+    .mealCard.item5{
+        animation:  appearance 1000ms;
+        animation-delay: 400ms;
+        animation-fill-mode: forwards;
+    }
+
+    .mealCard.item6{
+        animation:  appearance 1000ms;
+        animation-delay: 500ms;
+        animation-fill-mode: forwards;
+    }
+
+    .mealCard.item7{
+        animation:  appearance 1000ms;
+        animation-delay: 600ms;
+        animation-fill-mode: forwards;
+    }
+
+    .mealCard.item8{
+        animation:  appearance 1000ms;
+        animation-delay: 700ms;
+        animation-fill-mode: forwards;
+    }
+
+    .mealCard.item9{
+        animation:  appearance 1000ms;
+        animation-delay: 800ms;
+        animation-fill-mode: forwards;
+    }
+
+
+    @keyframes up{
+        0% {
+            transform :translatey(60px)
+            }
+        100% {
+            transform :translatey(0)
+        }
+        }
+
+
+    @keyframes appearance {
+    to{
+            opacity: 1;
+        }
+
+    } */

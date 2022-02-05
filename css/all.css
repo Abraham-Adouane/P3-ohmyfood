@@ -3,8 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&family=Shrikhand&display=swap');
 
 
-
-
 :root{
 --bgColor: #F6F6F6;
 --textColor: black;
@@ -25,7 +23,6 @@
 --textSize: 15px;
 
 scroll-behavior: smooth;
-
 }
 
 *, *::before, *::after{
@@ -33,7 +30,6 @@ scroll-behavior: smooth;
    margin: 0;
    padding: 0;
 }
-
 
 body{
     font-size: var(--textSize);
@@ -45,10 +41,8 @@ body{
     margin: auto;
 }
 
-
 .title{
-    font-size: var(--titleSize);
-    
+    font-size: var(--titleSize);  
 }
 
 a{

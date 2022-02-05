@@ -61,11 +61,12 @@ header .title{
 
 
 .btnForm{
-    font-weight: bold;
-    width: 217px;
-    height: 50px;
-    margin: 15px 0 45px;
-    border-radius: calc( 50px/ 2 );
+    /* width: 217px; */
+    /* height: 50px; */
+    margin: 15px auto 45px;
+    /* margin: auto; */
+    padding: 20px;
+    border-radius: calc( 60px/ 2 );
     border:none;
     background: none;
     background:  var(--gradientColor);
